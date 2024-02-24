@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # 'blog.middleware.my_fun_middleware',
     'blog.middleware.MyClassMiddleware',
+    'blog.middleware.MyClassMiddlewareTwo',
+    'blog.middleware.MyClassMiddlewareThree',
 ]
 
 ROOT_URLCONF = 'CustomMiddleware.urls'
