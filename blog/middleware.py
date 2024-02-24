@@ -76,3 +76,7 @@ class MyProcessViewMiddleware:
         print(exception.__class__.__name__)
         return HttpResponse(msg)
     
+    def process_template_response(self, request, response):
+        response.context_data['author'] = 'Shifa'
+        return response
+    

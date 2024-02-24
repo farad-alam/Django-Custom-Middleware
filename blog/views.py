@@ -1,10 +1,12 @@
 from django.shortcuts import render, HttpResponse
+from django.template.response import TemplateResponse
 
 # Create your views here.
 
 def home(request):
     print("home view caled")
-    return render(request, 'blog/home.html')
+    context = {"author":"Farad"}
+    return TemplateResponse(request, 'blog/home.html', context)
 
 def exception_view(request):
     print('this is exception view')
