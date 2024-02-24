@@ -48,7 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'blog.middleware.my_fun_middleware'
+    # 'blog.middleware.my_fun_middleware',
+    'blog.middleware.MyClassMiddleware',
 ]
 
 ROOT_URLCONF = 'CustomMiddleware.urls'
