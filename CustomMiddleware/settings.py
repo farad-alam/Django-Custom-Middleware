@@ -53,6 +53,7 @@ MIDDLEWARE = [
     # 'blog.middleware.MyClassMiddlewareTwo',
     # 'blog.middleware.MyClassMiddlewareThree',
     'blog.middleware.MyProcessViewMiddleware',
+    'blog.middleware.RateLimitMiddleware',
 ]
 
 ROOT_URLCONF = 'CustomMiddleware.urls'
